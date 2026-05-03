@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swaraj Savant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:#eaeaea;
+  line-height:1.6;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  background:rgba(15,15,15,0.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav h3{
+  font-weight:600;
+}
+
+nav a{
+  margin-left:20px;
+  color:#aaa;
+  text-decoration:none;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:white;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  padding:0 10%;
+}
+
+.hero h1{
+  font-size:64px;
+  max-width:700px;
+  line-height:1.2;
+}
+
+.hero span{
+  color:#888;
+}
+
+.subtext{
+  margin-top:40px;
+  font-size:14px;
+  color:#666;
+  max-width:400px;
+}
+
+/* CURSOR */
+.cursor{
+  animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  0%,100%{opacity:1;}
+  50%{opacity:0;}
+}
+
+/* SECTION */
+.section{
+  padding:120px 10%;
+  max-width:1100px;
+}
+
+/* PROJECT */
+.project{
+  margin-bottom:50px;
+}
+
+.project h3{
+  font-size:26px;
+}
+
+.project p{
+  color:#888;
+  margin-top:10px;
+  max-width:600px;
+}
+
+/* CLICKABLE LINK */
+.project-link{
+  color:#fff;
+  text-decoration:none;
+  border-bottom:1px solid #555;
+  margin-left:5px;
+  transition:.3s;
+}
+
+.project-link:hover{
+  color:#aaa;
+  border-color:#aaa;
+}
+
+/* CONTACT */
+.contact p{
+  color:#888;
+  margin-top:10px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  background:white;
+  color:black;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* FADE */
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+.abilities{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.ability{
+  background:#151515;
+  padding:20px;
+  border-radius:8px;
+  transition:.3s;
+}
+
+.ability h3{
+  font-size:18px;
+}
+
+.ability p{
+  font-size:14px;
+  color:#aaa;
+  margin-top:10px;
+}
+
+.ability:hover{
+  transform:translateY(-5px);
+  background:#1d1d1d;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+  <h3>Swaraj</h3>
+  <div>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>
+      I design & build<br>
+      <span id="typing"></span><span class="cursor">|</span>
+    </h1>
+
+    <p class="subtext">
+      Focused on clean design, performance & modern user experience.
+    </p>
+  </div>
+</section>
+
+<!-- MY WORK -->
+<section class="section fade" id="work">
+  <h2>My Work</h2>
+
+  <div class="project">
+    <h3>Portfolio Website</h3>
+    <p>A modern personal portfolio with smooth animations and clean UI.</p>
+  </div>
+
+  <div class="project">
+    <h3>Business Landing Page</h3>
+    <p>A high-converting landing page designed for business growth.</p>
+  </div>
+
+  <div class="project">
+    <h3>Web App UI</h3>
+    <p>A minimal dashboard interface for web applications.</p>
+  </div>
+
+  <div class="project">
+    <h3><strong>My Project</strong></h3>
+
+    <p>
+      <strong>Link:</strong> 
+      <a href="https://funngrowebenhancement.netlify.app/ " target="_blank" class="project-link">
+        View Project
+      </a>
+    </p>
+    </div>
+    <div class="project 2">
+    <p>
+      This project was my third project done for funngro. There I did a better SEO and improved UI and UX also I redesign the website. Because of this work I was eligible to work on funngro.
+    </p>
+    
+    <p>
+    <strong>Link:</strong>
+    <a href="https://game-hub-drab-three.vercel.app/" target="_blank" class="project -link"> View project 
+    </a>
+    </p>
+    
+    <p>
+        This was my first project. A simple gaming website. This has clear UI and great UX with all games minimal but working smoothly.
+       </p>
+  </div>
+
+</section>
+<section class="section fade" id="abilities">
+  <h2>My Abilities</h2>
+
+  <div class="abilities">
+
+    <div class="ability">
+      <h3>Frontend Development</h3>
+      <p>Building responsive and modern websites using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="ability">
+      <h3>UI Design</h3>
+      <p>Designing clean, minimal, and user-friendly interfaces with good UX principles.</p>
+    </div>
+
+    <div class="ability">
+      <h3>Performance Optimization</h3>
+      <p>Creating fast-loading and smooth websites with optimized structure and code.</p>
+    </div>
+
+    <div class="ability">
+      <h3>Problem Solving</h3>
+      <p>Analyzing problems and building efficient solutions in web development.</p>
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="section fade contact" id="contact">
+  <h2>Contact</h2>
+  <p>If you want to work together or have a project, reach out.</p>
+
+  <a href="mailto: savantswaraj139@gmail.com" class="btn">Email Me</a>
+</section>
+
+<script>
+// typing + deleting
+const words = ["websites", "experiences", "interfaces"];
+let i = 0;
+let j = 0;
+let isDeleting = false;
+
+function type(){
+  const current = words[i];
+  const el = document.getElementById("typing");
+
+  if(isDeleting){
+    el.textContent = current.substring(0, j--);
+  } else {
+    el.textContent = current.substring(0, j++);
+  }
+
+  let speed = isDeleting ? 50 : 90;
+
+  if(!isDeleting && j === current.length){
+    speed = 1200;
+    isDeleting = true;
+  } else if(isDeleting && j === 0){
+    isDeleting = false;
+    i = (i + 1) % words.length;
+    speed = 300;
+  }
+
+  setTimeout(type, speed);
+}
+type();
+
+// scroll animation
+const faders = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+  faders.forEach(el => {
+    if(el.getBoundingClientRect().top < window.innerHeight - 100){
+      el.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+  </html>
